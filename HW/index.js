@@ -1,11 +1,6 @@
 // // // •	Визначте дві змінні: admin і name 
-// // let person = prompt("Ви адмін?");
-// // if (person == "admin") {
-// //     console.log('admin');
-// // }
-// // else if (person == "name") {
-// //     console.log('name');
-// // }
+// // let admin;
+// // let name;
 // // // •	Запишіть рядок "Джон" у змінній name.
 // let name_1 = "Джон";
 

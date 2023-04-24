@@ -1,16 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>JavaScript</title>
-    </head>
-    <body>
-        <h1>JavaScript</h1>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repellendus repellat necessitatibus, 
-            quas consequuntur quaerat sapiente, illum omnis minus consequatur obcaecati? Tempora ex dicta neque laboriosam ab quam pariatur nulla.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylistka brwi i rzęs we Wrocławiu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+          <h1>Romanowa_brows</h1>
         </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">O mnie</a></li>
+            <li><a href="#">Usługi</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </header>
+
+    <main>
+      <section id="about">
+        <h2>O mnie</h2>
+        <p>Jestem stylistką brwi i rzęs z wieloletnim doświadczeniem.</p>
+      </section>
+
+      <section id="services">
+        <h2>Usługi</h2>
+        <ul>
+          <li>Modelowanie brwi</li>
+          <li>Henna brwi</li>
+          <li>Regulacja brwi</li>
+          <li>Przedłużanie rzęs</li>
+          <li>Zabiegi pielęgnacyjne dla rzęs</li>
+        </ul>
+      </section>
+
+      <section id="gallery">
+        <h2>Galeria</h2>
+        <div class="gallery-container">
+          <img src="brwi1.jpg" alt="zdjęcie przed i po modelowaniu brwi" />
+          <img src="rzęsy1.jpg" alt="zdjęcie przed i po przedłużaniu rzęs" />
+          <img src="brwi2.jpg" alt="zdjęcie przed i po hennie brwi" />
+        </div>
+      </section>
+
+      <section class="prices">
+        <h2>Cennik</h2>
+        <div class="price-cards">
+          <div class="price-card">
+            <h3>Brwi</h3>
+            <p class="price">50 zł</p>
+            <ul>
+              <li>Korekta brwi</li>
+              <li>Modelowanie brwi</li>
+            </ul>
+          </div>
+          <div class="price-card">
+            <h3>Rzęsy</h3>
+            <p class="price">80 zł</p>
+            <ul>
+              <li>Przedłużanie rzęs metodą 1:1</li>
+              <li>Uzupełnienie rzęs</li>
+            </ul>
+          </div>
+          <div class="price-card">
+            <h3>Kompleksowy pakiet</h3>
+            <p class="price">120 zł</p>
+            <ul>
+              <li>Korekta i modelowanie brwi</li>
+              <li>Przedłużanie rzęs metodą 1:1</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Kontakt</h2>
        
-    <script src="./index.js"></script>
-    
-    </body>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Stylistka brwi i rzęs. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

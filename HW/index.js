@@ -1,145 +1,140 @@
-// 1
+// 1. 
 
-//const num = prompt("Введіть число");
-//if (num % 2 === 0) {
-//    console.log ('парне')
-//} else {
-//    console.log ('не парне')
-//};
+//function getHypotenuse(a, b) {
+    
 
-// 2
+//    let sumOfSquares = Math.pow(a, 2) + Math.pow(b, 2);
+//    let hypotenuse = Math.sqrt(sumOfSquares);
+//    
+//    return hypotenuse;
+//  }
 
-//const num = prompt("Введіть число");
-//if (num == 7){
-//    console.log ('рівно 7')
-//}
-//else if (num > 5){
-//    console.log ('більше 5')
-//}
-//else if (num < 10){
-//    console.log ('меньше 10')
-//};
+//  let a = 6;
+//  let b = 8;
+//  let c = getHypotenuse(a, b);
+  
+//  console.log("Гіпотенуза прямокутного трикутника з катетами " + a + " та " + b + " дорівнює " + c);
+  
+// 2.
 
+//function getRandomNumber(min, max, precision) {
+    
+//    let randomNumber = Math.random() * (max - min) + min;
+//    let roundedNumber = +randomNumber.toFixed(precision);
+    
+//    return roundedNumber;
+//  }
+//  let randomNum = getRandomNumber(5, 3, 9);
+  
+//  console.log("Випадкове число з точністю до 2 знаків після коми: " + randomNum);
 
-//3
+// 3.
 
-//const season = prompt("Впишіть місяць")
-//switch (season) {
-//    case "1":
-//        console.log("зима");
-//        break;
-//    case "2":
-//       console.log("зима");
-//        break;
-//    case "3":
-//        console.log("весна");
-//        break;
-//    case "4":
-//        console.log("весна");
-//        break;
-//    case "5":
-//        console.log("весна");
-//        break;
-//    case "6":
-//        console.log("літо");
-//        break;
-//    case "7":
-//        console.log("літо");
-//        break;
-//    case "8":
-//        console.log("літо");
-//        break;
-//    case "9":
-//        console.log("осінь");
-//        break;
-//    case "10":
-//        console.log("осінь");
-//        break;
-//    case "11":
-//        console.log("осінь");
-//        break;
-//    case "12":
-//        console.log("зима");
-//        break;
-//}
-
-
-// 4
-
-
-
-// 5
-
-
-
-// 6
-
-//const random = (min, max) =>{
-//    console.log("Мінімальне число",min, "Максимальне число", max)
-//    return Math.floor(Math.random() * (max - min) + min)
-//}
-//console.log(random(1,9999))
-
-
-// 7
-
-// const number = ['20', '25', '31', '45']
-
-// function getnumber (number) {
-//    return `${number[number.length-1]}`
-//}
-//console.log (getnumber(number));
-
-// 8
-
-//const UserPassword = prompt("Введіть пароль");
-
-
-//if (UserPassword === 'Password' || UserPassword === 'password') {
-//    console.log("All is ok");
-//} else {
-//    console.log("All is not ok - try again");
-//}
-
-// 9
-
-//function difference(a, b) {
-//    return Math.abs(a + b);
+//function reverseArray(arr) {
+    
+//    let reversedArray = arr.reverse();
+//    return reversedArray;
 //  }
   
-//  console.log(difference(3, 5));
-  
-  
-//  console.log(difference(7, 8));
-  
-  
-//  console.log(difference(8, 15));
+//  let numbers = [1, 2, 3, 4, 5];
+//  let reversedNumbers = reverseArray(numbers);
   
 
-// 10
+//  console.log("Масив чисел у зворотному порядку: " + reversedNumbers);
+  
+// 4.
 
-//function getRandomInt(min, max) {
-//    return Math.floor(Math.random() * (max - min) + min)
+//function sumEvenNumbers(arr) {
+    
+//    let evenNumbers = arr.filter(function(num) {
+//      return num % 2 === 0;
+//    });
+    
+//    let sum = evenNumbers.reduce(function(total, num) {
+//      return total + num;
+//    }, 0);
+    
+//    return sum;
 //  }
   
-//  console.log(getRandomInt(0,10));
+//  let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//  let sumOfEvenNumbers = sumEvenNumbers(numbers);
+  
+//  console.log("Масив чисел: " + numbers);
+//  console.log("Сума парних чисел у масиві: " + sumOfEvenNumbers);
 
-// 11
-
-//console.log(Math.floor(10.95));
-
-
-//console.log(Math.floor(2.5));
-
-
-//console.log(Math.floor(101,79));
+// 5.
 
 
-//console.log(Math.floor(-5.05));
+// 6.
 
-// 12
+//function multiplicationTable(number) {
+//    for (let i = 1; i <= 10; i++) {
+//      let result = number * i;
+//      console.log(number + " * " + i + " = " + result);
+//    }
+//  }
+  
+//  multiplicationTable(5);
 
-//const number = prompt('Введіть число: ');
+// 7.
 
-//const result = Math.sqrt(number);
-//console.log(`Корінь числа ${number} є ${result}`);
+//function uniqueNumbers(numbers) {
+//    let unique = [];
+  
+//    for (let i = 0; i < numbers.length; i++) {
+//      if (unique.indexOf(numbers[i]) === -1) {
+//        unique.push(numbers[i]);
+//      }
+//    }
+  
+//    return unique;
+//  }
+  
+//  let numbers = [1, 2, 3, 2, 4, 3, 5];
+//  let unique = uniqueNumbers(numbers);
+//  console.log(unique); 
+
+// 8.
+
+//function findLongestString(arr) {
+//    let longest = "";
+//    for (let i = 0; i < arr.length; i++) {
+//      if (arr[i].length > longest.length) {
+//        longest = arr[i];
+//      }
+//    }
+//    return longest;
+//  }
+//  console.log (findLongestString(["mercedes", "bus", "refrigerator"]))
+
+// 9.
+
+
+// 10.
+
+//function toLowerCaseArray(arr) {
+//    const lowerCaseArr = [];
+//    for (let i = 0; i < arr.length; i++) {
+//      lowerCaseArr.push(arr[i].toLowerCase());
+//    }
+//    return lowerCaseArr;
+//  }
+
+//const arr = ["MeRCeDes", "BaNaNa", "UKRaine"];
+//const lowerCaseArr = toLowerCaseArray(arr);
+//console.log(lowerCaseArr); 
+
+// 11.
+
+//function average(numbers) {
+//    let sum = 0;
+//    for (let i = 0; i < numbers.length; i++) {
+//      sum += numbers[i];
+//    }
+//    return sum / numbers.length;
+//  }
+
+//const numbers = [5, 5, 25, 35];
+//console.log(average(numbers)); 
+
